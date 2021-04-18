@@ -19,7 +19,7 @@ User Info: {
     RawLLDBErrorMessage = "attach failed (Not allowed to attach to process.  Look in the console messages (Console.app), near the debugserver entries when the attached failed.  The subsystem that denied the attach permission will likely have logged an informative message about why it was denied.)";
 }
 ```
-![Screenshot 2021-04-18 at 09.59.10.png](/images/Screenshot 2021-04-18 at 09.59.10.png)
+![Screenshot 2021-04-18 at 09.59.10.png](/assets/images/Screenshot 2021-04-18 at 09.59.10.png)
 
 From that error message we can see that we are not allowed to attach to that 
 process. This is controlled by `com.apple.security.get-task-allow` [entitlement](https://developer.apple.com/documentation/bundleresources/entitlements) 
@@ -209,7 +209,7 @@ xcrun simctl install booted ~/Documents/Maps.app
 And success! If we take a look into Simulator, we see that we have 2 Maps apps
 now:
 
-![Simulator Screen Shot - iPhone X - 2021-04-18 at 11.41.02.png](/images/Simulator Screen Shot - iPhone X - 2021-04-18 at 11.41.02.png)
+![Simulator Screen Shot - iPhone X - 2021-04-18 at 11.41.02.png](/assets/images/Simulator Screen Shot - iPhone X - 2021-04-18 at 11.41.02.png)
 
 ## Debugging Maps app
 
@@ -233,18 +233,18 @@ use Xcode debugger tools, you need to have any iOS app project open. It does not
 matter if it is your existing, unrelated app or just new plain iOS app project.
 
 Once you have opened your Xcode project, go to Menu -> Debug -> "Attach to Process by PID or Name":
-![Screenshot 2021-04-18 at 11.56.23.png](/images/Screenshot 2021-04-18 at 11.56.23.png)
+![Screenshot 2021-04-18 at 11.56.23.png](/assets/images/Screenshot 2021-04-18 at 11.56.23.png)
 
 
 Use the PID from previous step or type in "Maps" and then click on "Attach".
-![Screenshot 2021-04-18 at 12.01.32.png](/images/Screenshot 2021-04-18 at 12.01.32.png)
+![Screenshot 2021-04-18 at 12.01.32.png](/assets/images/Screenshot 2021-04-18 at 12.01.32.png)
 
 After few seconds, you should see that Xcode Debug area becomes active and you
 can now select "Debug View Hierarchy".
-![Screenshot 2021-04-18 at 12.03.02.png](/images/Screenshot 2021-04-18 at 12.03.02.png)
+![Screenshot 2021-04-18 at 12.03.02.png](/assets/images/Screenshot 2021-04-18 at 12.03.02.png)
 
 Click on it! Wait few seconds and you should now have View Debugger attached to 
 Maps app.
 
-![Screenshot 2021-04-18 at 12.05.59.png](/images/Screenshot 2021-04-18 at 12.05.59.png)
+![Screenshot 2021-04-18 at 12.05.59.png](/assets/images/Screenshot 2021-04-18 at 12.05.59.png)
 
