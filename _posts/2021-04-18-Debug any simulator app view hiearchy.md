@@ -35,7 +35,9 @@ default apps all live in the same location, so its relatively easy to find them.
 If we know the bundle ID for the app, we can use simctl to find it: 
 ```sh
 xcrun simctl get_app_container booted com.apple.Maps
+```
 
+```
 /Users/alvarhansen/Downloads/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/Applications/Maps.app
 ```
 
@@ -44,17 +46,19 @@ directory:
 
 1. Find Xcode location:
 
-```sh
-xcode-select -p
+	```sh
+	xcode-select -p
+	```
 
-/Users/alvarhansen/Downloads/Xcode_12.4.app/Contents/Developer
-```
+	```
+	/Users/alvarhansen/Downloads/Xcode_12.4.app/Contents/Developer
+	```
 
 2. Open iOS Simulator applications directory:
 
-```sh
-open $(xcode-select -p)/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/Applications
-```
+	```sh
+	open $(xcode-select -p)/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/Applications
+	```
 
 ## Changing the simulator app
 
@@ -106,7 +110,9 @@ we need your developer identity. This can be found using:
 
 ```sh
 security find-identity
+```
 
+```
   1) ABCD1234ABCD1234ABCD1234ABCD1234ABCD1234 "Apple Development: Alvar Hansen (ABCD1234)"
 ```
 
