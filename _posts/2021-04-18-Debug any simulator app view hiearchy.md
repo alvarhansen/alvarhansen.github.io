@@ -109,7 +109,7 @@ Configuring entitlements is done using `codesign` tool. But to sign a binary,
 we need your developer identity. This can be found using:
 
 ```sh
-security find-identity
+security find-identity -v -p codesigning
 ```
 
 ```
